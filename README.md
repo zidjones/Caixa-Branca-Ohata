@@ -1,46 +1,46 @@
 # Caixa-Branca-Ohata
-package login; /*N1*/
+package login; /*1*/
 
-import java.sql.Connection; /*N1*/
-import java.sql.DriverManager; /*N1*/
-import java.sql.ResultSet; /*N1*/
-import java.sql.Statement; /*N1*/
+import java.sql.Connection; /*1*/
+import java.sql.DriverManager; /*1*/
+import java.sql.ResultSet; /*1*/
+import java.sql.Statement; /*1*/
 
-public class User { /*N2*/
+public class User { /*2*/
     
-    public Connection conectarBD() { /*N3*/
-        Connection conn = null; /*N4*/
-        try { /*N5*/
-            Class.forName("com.mysql.Driver.Manager").newInstance(); /*N5*/
-            String url = "jdbc:mysql://127.0.0.1/test?user=lopes&password=123"; /*N5*/
-            conn = DriverManager.getConnection(url); /*N5*/
-        } catch (Exception e) { } /*N6*/
-        return conn; /*N7*/
-    } /*N7*/
+    public Connection conectarBD() { /*3*/
+        Connection conn = null; /*4*/
+        try { /*5*/
+            Class.forName("com.mysql.Driver.Manager").newInstance(); /*5*/
+            String url = "jdbc:mysql://127.0.0.1/test?user=lopes&password=123"; /*5*/
+            conn = DriverManager.getConnection(url); /*5*/
+        } catch (Exception e) { } /*6*/
+        return conn; /*7*/
+    } /*7*/
 
-    public String nome = ""; /*N8*/
-    public boolean result = false; /*N9*/
+    public String nome = ""; /*8*/
+    public boolean result = false; /*9*/
 
-    public boolean verificarUsuario(String login, String senha) { /*N10*/
-        String sql = ""; /*N11*/
-        Connection conn = conectarBD(); /*N12*/
+    public boolean verificarUsuario(String login, String senha) { /*10*/
+        String sql = ""; /*11*/
+        Connection conn = conectarBD(); /*12*/
         
-        sql = "select nome from usuarios "; /*N13*/
-        sql += "where login = '" + login + "'"; /*N13*/
-        sql += " and senha = '" + senha + "'"; /*N13*/
+        sql = "select nome from usuarios "; /*13*/
+        sql += "where login = '" + login + "'"; /*13*/
+        sql += " and senha = '" + senha + "'"; /*13*/
         
-        try { /*N14*/
-            Statement st = conn.createStatement(); /*N15*/
-            ResultSet rs = st.executeQuery(sql); /*N15*/
+        try { /*14*/
+            Statement st = conn.createStatement(); /*15*/
+            ResultSet rs = st.executeQuery(sql); /*16*/
             
-            if (rs.next()) { /*N16*/
-                result = true; /*N17*/
-                nome = rs.getString("nome"); /*N17*/
-            } else { /*N18*/
-                result = false; /*N19*/
+            if (rs.next()) { /*17*/
+                result = true; /*18*/
+                nome = rs.getString("nome"); /*18*/
+            } else { /*19*/
+                result = false; /*19*/
             }
-        } catch (Exception e) { } /*N20*/
+        } catch (Exception e) { } /*20*/
         
-        return result; /*N21*/
-    } /*N21*/
-} /*N22*/
+        return result; /*21*/    
+    } /*21*/    
+} /*22*/
