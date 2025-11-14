@@ -10,6 +10,9 @@ CAMINHOS:
 User.java: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/User.java
 Main.java: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/Main.java
 
+IMAGEM DA CONEXÃO JUNTO AO BANCO: 
+CAMINHO: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/CONEX%C3%83O%20JUNTO%20AO%20BANCO.png
+
 CÓDIGO COMENTADO COM OS NÓS
 import java.sql.Connection;
 import java.sql.DriverManager;
