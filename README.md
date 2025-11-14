@@ -1,5 +1,5 @@
 ```
-EXCEL COM PLANO DE TESTE ANEXADO
+EXCEL COM PLANO DE TESTE ANEXADO 
 CAMINHO: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/PLANO_DE_TESTE_CAIXA_BRANCA.xlsx
 
 FLUXOGRAMA DE CAIXA BRANCA ANEXADO
@@ -7,7 +7,8 @@ CAMINHO: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/FLUXOGRAMA_CAI
 
 CÓDIGO ARRUMADO E CONECTADO COM O BANCO ANEXADO:
 CAMINHOS:
-User.java: 
+User.java: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/User.java
+Main.java: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/Main.java
 
 CÓDIGO COMENTADO COM OS NÓS
 import java.sql.Connection;
