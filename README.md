@@ -1,4 +1,7 @@
 ```
+EXCEL COM PLANO DE TESTE ANEXADO
+CAMINHO: github.com/zidjones/Caixa-Branca-Ohata
+CÓDIGO COMENTADO COM OS NÓS
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
