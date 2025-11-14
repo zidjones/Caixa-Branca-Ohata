@@ -5,6 +5,10 @@ CAMINHO: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/PLANO_DE_TESTE
 FLUXOGRAMA DE CAIXA BRANCA ANEXADO
 CAMINHO: https://github.com/zidjones/Caixa-Branca-Ohata/blob/main/FLUXOGRAMA_CAIXA_BRANCA.pdf
 
+CÓDIGO ARRUMADO E CONECTADO COM O BANCO ANEXADO:
+CAMINHOS:
+User.java: 
+
 CÓDIGO COMENTADO COM OS NÓS
 import java.sql.Connection;
 import java.sql.DriverManager;
