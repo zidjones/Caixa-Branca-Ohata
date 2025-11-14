@@ -38,7 +38,6 @@ public class User { // n1
 }
 //fim da class
 
-![1](https://github.com/user-attachments/assets/3c2bab71-edef-41c4-ab2c-8f59059d4a22)
 
 
 COMPLEXIDADE CICLOMÁTICA COM CALCULOS
@@ -58,17 +57,18 @@ M=3
 A complexidade ciclomática calculada é 3, o que significa que existem três caminhos independentes no código:
 
 Um caminho onde a conexão (connection) dá errado e condição if (rs.next()) é errada.
-1 → 2 → 3 → 4 → 5 → 6 → 1 → 2 → 3 → 4 → 5 → 6
+1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 15 → 16
 Um caminho onde a conexão (connection) dá certo e condição if (rs.next()) é correta.
-1 → 2 → 3 → 4 → 5 → 6 → 1 → 2 → 3 → 4 → 5 → 6
+1 → 2 → 3 → 4 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 16
 Um caminho onde a conexão (connection) dá certo e condição if (rs.next()) é errada.
-1 → 2 → 3 → 4 → 5 → 6 → 1 → 2 → 3 → 4 → 5 → 6
+1 → 2 → 3 → 4 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 15 → 16
 CAMINHOS INDEPENDENTES
 
 Método conectarBD()
 
 Caminho 1: (1 → 2 → 3 → 5).
 Caminho 2: (1 → 2 → 3 → 4 → 5).
+
 Método verificarUsuario():
 
 Caminho 1: nesse caminho o conectarBD() é chamado e a execução da SQL é bem-sucedida com rs.next() true (6 → 7 → 8 → 9 → 10 → 11 → 13).
